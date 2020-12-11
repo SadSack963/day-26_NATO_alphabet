@@ -22,7 +22,7 @@ df = pandas.read_csv("nato_phonetic_alphabet.csv")
 # print(df_dict)
 """{'letter': {0: 'A', 1: 'B', 2: 'C', ... }, 'code': {0: 'Alfa', 1: 'Bravo', 2: 'Charlie', ... }"""
 
-# Create dictionary in the correct format
+# Create dictionary in the correct format using dictionary comprehension
 nato_dict = {row.letter: row.code for (index, row) in df.iterrows()}
 # print(nato_dict)
 """
